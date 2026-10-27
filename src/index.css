@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .font-handwriting {
+    font-family: 'Caveat', cursive, sans-serif;
+  }
+  .font-fredoka {
+    font-family: 'Fredoka', cursive, sans-serif;
+  }
+  .font-body {
+    font-family: 'Nunito', sans-serif;
+  }
+}
+
+/* Lined notebook paper background */
+.lined-paper {
+  background-color: #FFFDF8;
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent 0px,
+    transparent 27px,
+    #E2E8F0 28px
+  );
+  line-height: 28px;
+}
+
+/* Marinière cyan stripes (Marie's shirt pattern) */
+.mariniere-stripes {
+  background: repeating-linear-gradient(
+    0deg,
+    #FFFFFF,
+    #FFFFFF 10px,
+    #02A2BB 10px,
+    #02A2BB 18px
+  );
+}
+
+.mariniere-stripes-horizontal {
+  background: repeating-linear-gradient(
+    90deg,
+    #FFFFFF,
+    #FFFFFF 12px,
+    #02A2BB 12px,
+    #02A2BB 20px
+  );
+}
+
+/* Notebook margin line */
+.notebook-margin {
+  position: relative;
+}
+.notebook-margin::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 36px;
+  width: 2px;
+  background-color: rgba(130, 1, 1, 0.25);
+  pointer-events: none;
+}
+
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+  .print-page-break {
+    page-break-after: always;
+    break-after: page;
+  }
+}

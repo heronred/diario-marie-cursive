@@ -1,0 +1,6 @@
+{
+  "name": "Diário da Marie Cursive - Gabriel Fontolan",
+  "description": "Diário escolar digital de Gabriel Fontolan (2° ano B) com as aventuras da boneca Marie Cursive.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
