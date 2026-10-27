@@ -62,8 +62,7 @@ export const Header: React.FC<HeaderProps> = ({
                 : 'text-stone-600 hover:text-[#02A2BB] hover:bg-[#02A2BB]/10'
             }`}
           >
-            <Grid className="w-3.5 h-3.5" />
-            <span>Álbum ({totalCount} Páginas)</span>
+    
           </button>
         </nav>
       </div>
